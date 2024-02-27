@@ -1,0 +1,46 @@
+#root{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.container{
+    display: flex;
+    width: 500px;
+    box-shadow:0px 5px 10px 1px #7211f4;
+    box-sizing: border-box;
+    padding: 8px;
+    gap: 10px;
+}
+
+.block-photo{
+    width: 100px;
+    height: 100px;
+  
+}
+
+.block-photo img{
+    width: 100%;
+    height: 100%;
+    object-fit:cover;
+}
+.block-title{
+    display: flex;
+    align-items: center;
+    flex: 1;
+}
+.block-active{
+    display: flex;
+    align-items: center;
+}
+
+.block-active button{
+    width: 100px;
+    height: 30px;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    font-weight: 600;
+    color: white;
+    background-color: #7211f4;
+}
