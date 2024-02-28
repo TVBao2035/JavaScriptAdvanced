@@ -1,5 +1,3 @@
-
-
 var root = document.getElementById('root');
 
 var data = [
@@ -38,7 +36,7 @@ var data = [
 ]
 
 function createCard(title, img){
-    return `    
+    return `
         <div class="container">
             <div class="block-photo">
                 <img src=${img} alt="">
@@ -53,12 +51,17 @@ function createCard(title, img){
     `
 }
 
-root.innerHTML += data.map(
-    function(card){
-        return createCard(card.title, card.img);
+root.innerHTML = data.map((element)=>createCard(element.title, element.img));    
+
+
+var btnEvent = document.querySelectorAll('.block-active button');
+
+btnEvent.forEach((element)=>{
+    element.onclick = ()=>{
+        alert("Fault")
     }
-)
-
-
+})
+    
+    
 
 
