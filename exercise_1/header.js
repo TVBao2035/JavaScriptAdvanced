@@ -16,7 +16,7 @@ function header(){
             <li class="header_item">menu</li>
             <li class="header_item">cart</li>
         </ul>
-        ${card("sản phẩm của header", "./photo/img.png", eventOnHeader)}
+        ${card("sản phẩm của header", "photo/img.png", eventOnHeader)}
     </div>
     `
 }

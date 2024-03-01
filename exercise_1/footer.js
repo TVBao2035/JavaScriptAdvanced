@@ -8,7 +8,7 @@ function footer(){
     return `
     <div class="footer_container">
         <h1>Footer</h1>
-        ${card("sản phẩm của footer", "./photo/img.png", eventOnFooter)}
+        ${card("sản phẩm của footer", "photo/img.png", eventOnFooter)}
     </div>
     `
 }
