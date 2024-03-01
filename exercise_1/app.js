@@ -1,3 +1,7 @@
+import header from './header.js';
+import card from './card.js'
+import footer from './footer.js';
+
 var root = document.getElementById('root');
 
 var data = [
@@ -35,32 +39,22 @@ var data = [
     }
 ]
 
-function createCard(title, img){
-    return `
-        <div class="container">
-            <div class="block-photo">
-                <img src=${img} alt="">
-            </div>
-            <div class="block-title">
-                <h4>${title}</h4>
-            </div>
-            <div class="block-active">
-                <button type="button">Buy</button>
-            </div>
-        </div>
-    `
+function alertClick()
+{
+    alert("Welcome to shop!!!");
 }
 
-root.innerHTML = data.map((element)=>createCard(element.title, element.img));    
+
+root.innerHTML += header();
+
+root.innerHTML += data.map((e)=>card(e.title, e.img, alertClick));
+
+root.innerHTML += footer();
 
 
-var btnEvent = document.querySelectorAll('.block-active button');
 
-btnEvent.forEach((element)=>{
-    element.onclick = ()=>{
-        alert("Fault")
-    }
-})
+
+
     
     
 
